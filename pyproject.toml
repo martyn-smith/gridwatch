@@ -1,0 +1,27 @@
+[project]
+name = "UK-wind-power-analysis"
+version = "0.1.0"
+description = "script for analysing UK power grid, particularly wind output. Thanks to gridwatch.org.uk for providing data"
+package-mode = false
+authors = [
+    {name = "Martyn Smith"},
+]
+requires-python = "<4.0,>=3.10"
+dependencies = [
+    "numpy>=2.0.0",
+    "pandas>=2.0.0",
+    "matplotlib<4.0.0,>=3.5.1",
+    "requests<3.0.0,>=2.32.3",
+    "pyqt6<7.0.0,>=6.7.0",
+    "scipy>=1.15.2",
+]
+
+[tool.pdm.build]
+includes = []
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[dependency-groups]
+dev = []
